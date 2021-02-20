@@ -8,6 +8,7 @@ const http = {
             url: url
         }
         if (params) config.params = params
+        console.log("hello test")
         return request(config)
     },
     post(url, params) {
