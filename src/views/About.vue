@@ -1,5 +1,22 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <p>message经过过滤器值为：{{ message | capitalize }}</p>
+    <input type="text">
   </div>
 </template>
+
+<script>
+export default {
+  name:'about',
+  data() {
+    return {
+      message: 'hello world'
+    }
+  },
+  filters: {
+    capitalize: (value) =>{
+      return value.charAt(0).toUpperCase() + value.slice(1)
+    }
+  }
+}
+</script>
