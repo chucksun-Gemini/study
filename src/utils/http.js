@@ -10,6 +10,7 @@ const http = {
         if (params) config.params = params
         return request(config)
     },
+
     post(url, params) {
         const config = {
             method: 'post',
