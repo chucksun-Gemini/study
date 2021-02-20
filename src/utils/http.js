@@ -8,7 +8,11 @@ const http = {
             url: url
         }
         if (params) config.params = params
+<<<<<<< HEAD
         console.log("hello test")
+=======
+        console.log("hello studylog")
+>>>>>>> 5696d6a9564e5b25b17ba4e0c85f37d02599b34f
         return request(config)
     },
     post(url, params) {
